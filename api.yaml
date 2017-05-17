@@ -1,0 +1,40 @@
+---
+swagger: '2.0'
+info:
+  description: Sample API Example
+  title: Sample API
+  version: '1.0'
+consumes:
+  - application/json
+produces:
+  - application/json
+schemes:
+  - http
+  - https
+
+paths:
+  /:
+    get:
+      description: Microservice Description
+      operationId: default_controller.get_version
+      responses:
+        '200':
+          description: Successful Response
+  /health:
+    get:
+      description: Microservice Healh Information
+      operationId: default_controller.health_check
+      responses:
+        '200':
+          description: Healthy Status
+        '500':
+          description: Unhealthy Status
+  /state:
+    get:
+      description: Microservice Readiness check
+      operationId: default_controller.readiness_check
+      responses:
+        '200':
+          description: In service
+        '500':
+          description: Out of service

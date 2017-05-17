@@ -1,11 +1,4 @@
-"""
-           NAME: saasOrdering repository
-         AUTHOR: OST
-    DESCRIPTION: REST controller to route requests
 
-    Copyright Oracle Inc. 2016, 2017 All Rights Reserved
-
-"""
 
 import os
 import os.path
